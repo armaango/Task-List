@@ -1,0 +1,89 @@
+body {
+    font-family: "arial", sans-serif;
+    margin: 0;
+    background: #F3F8FD;
+    color: #374E65;
+}
+.task-container {
+    margin: 20px auto;
+    width: 450px;
+}
+.task-entry {
+    overflow: hidden;
+}
+.task-input {
+    float: left;
+    background: transparent;
+    color: #374E65;
+    border: none;
+    font-size: 14px;
+    height: 40px;
+    width: 410px;
+    border-bottom: 1px solid #AAB1B9;
+    outline: none;
+    box-sizing: border-box;
+}
+.task-input:focus {
+    border-color: #3074B9;
+}
+.task-submit {
+    float: left;
+    font-size: 14px;
+    width: 40px;
+    height: 40px;
+    border: none;
+    background-color: #3074B9;
+    color: #fff;
+    cursor: pointer;
+    outline: none;
+}
+.task-submit:focus,
+.task-submit:hover {
+    background-color: #4D8DCE;
+}
+.task-submit:active {
+    box-shadow: inset 2px 2px 4px #1D2C3C;
+}
+.task-list {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+}
+.task {
+    position: relative;
+    padding-right: 30px;
+    padding-left: 30px;
+    border-bottom: 1px solid #D2DFEC;
+    background: #fff;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.task.done {
+    text-decoration: line-through;
+    color: #BFC7D0;
+}
+.task-done {
+    position: absolute;
+    left: 5px;
+    top: 10px;
+}
+.task-del {
+    position: absolute;
+    display: none;
+    right: 5px;
+    top: 10px;
+    color: #fff;
+    border: none;
+    background-color: #B3A1A1;
+    cursor: pointer;
+    outline: none;
+}
+.task-del:hover {
+    background-color: #B51B1B;
+}
+.task-del:active {
+    box-shadow: inset 2px 2px 4px #560808;
+}
+.task:hover .task-del {
+    display: block;
+}
